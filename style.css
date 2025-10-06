@@ -1,0 +1,130 @@
+/* ====== General Styling ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ====== Header ====== */
+header {
+  text-align: center;
+  background: linear-gradient(135deg, #0099ff, #00c6ff);
+  color: white;
+  padding: 2.5rem 1rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.1rem;
+}
+
+/* ====== Controls (Search + Filter Buttons) ====== */
+.controls {
+  text-align: center;
+  margin: 30px 0;
+}
+
+#searchInput {
+  padding: 10px 14px;
+  width: 70%;
+  max-width: 500px;
+  border: 2px solid #00aaff;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+}
+
+#searchInput:focus {
+  border-color: #007acc;
+  box-shadow: 0 0 6px rgba(0, 122, 204, 0.4);
+}
+
+.buttons {
+  margin-top: 15px;
+}
+
+.filter-btn {
+  padding: 8px 20px;
+  border: none;
+  background: #ddd;
+  color: #333;
+  border-radius: 20px;
+  margin: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background: #007acc;
+  color: white;
+}
+
+/* ====== Blog Container ====== */
+.blog-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+  width: 90%;
+  margin: 0 auto 50px;
+}
+
+/* ====== Blog Card ====== */
+.blog-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+.blog-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.blog-content {
+  padding: 18px;
+}
+
+.blog-content h3 {
+  font-size: 1.2rem;
+  color: #007acc;
+  margin-bottom: 8px;
+}
+
+.blog-content p {
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.blog-content span {
+  font-size: 0.85rem;
+  color: gray;
+}
+
+/* ====== Footer ====== */
+footer {
+  text-align: center;
+  background: #007acc;
+  color: white;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
